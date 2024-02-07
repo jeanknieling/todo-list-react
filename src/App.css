@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+  background-image: url("./imgs/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.app {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+button {
+  background: #333974;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  opacity: 0.8;
+  margin-right: 10px;
+  width: 100px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.todo-list,
+.filter,
+.search {
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+.todo-list {
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+  overflow-y: scroll;
+  max-height: 320px;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.todo-text {
+  width: 300px;
+}
+
+button.complete {
+  background: #5cb85c;
+}
+
+button.remove {
+  background: #d9534f;
+  width: 30px;
+}
+
+.todo-form {
+  padding: 10px 0 0 0;
+}
+
+input,
+select {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 100%;
+}
+
+input.input-search {
+  margin: 0;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-options-container select {
+  margin: 0;
+}
+
+.filter-options-container button {
+  width: 80px;
+}
